@@ -77,19 +77,13 @@ public class Main {
 
         //Task10
         System.out.println("Task10");
-        Comparator<Integer> comparator = new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o1.compareTo(o2);
-            }
-        };
         System.out.println(treeNum);
-        System.out.println("Max: " + treeNum.stream().max(comparator).get());
+        System.out.println("Max: " + treeNum.ceiling(15));
 
         //Task11
         System.out.println("Task11");
         System.out.println(treeNum);
-        System.out.println("Min: " + treeNum.stream().min(comparator).get());
+        System.out.println("Min: " + treeNum.floor(15));
 
         //Task12
         System.out.println("Task12");
